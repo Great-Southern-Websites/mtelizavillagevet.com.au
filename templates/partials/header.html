@@ -1,0 +1,63 @@
+{@io.quarkiverse.roq.frontmatter.runtime.model.Site site}
+<div class="topbar">
+  <div class="container">
+    <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <a href="tel:+61359552440">(03) 5955 2440</a></span>
+    <span class="hours">Mon&ndash;Fri 8:30am&ndash;6pm &middot; Sat 8:30am&ndash;1pm</span>
+    <span><a href="mailto:vet@mevv.com.au">vet@mevv.com.au</a></span>
+  </div>
+</div>
+<header class="site-header">
+  <div class="container bar">
+    <a class="brand" href="{=site.url}">
+      <svg width="42" height="42" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="32" r="30" fill="#135E63"/>
+        <g fill="#FAF7F0">
+          <ellipse cx="32" cy="39" rx="9.5" ry="8"/>
+          <ellipse cx="19.5" cy="28" rx="4.6" ry="6" transform="rotate(-18 19.5 28)"/>
+          <ellipse cx="27.5" cy="20.5" rx="4.6" ry="6" transform="rotate(-6 27.5 20.5)"/>
+          <ellipse cx="36.5" cy="20.5" rx="4.6" ry="6" transform="rotate(6 36.5 20.5)"/>
+          <ellipse cx="44.5" cy="28" rx="4.6" ry="6" transform="rotate(18 44.5 28)"/>
+        </g>
+      </svg>
+      <span class="name">Mt Eliza <em>Village Vet</em><small>Caring for pets since 2016</small></span>
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Toggle menu">
+    <label for="nav-toggle" class="nav-toggle"><span></span></label>
+    <nav class="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="{=site.url}">Home</a></li>
+        <li class="open">
+          <a href="{=site.url('services')}">Services</a>
+          <ul>
+            <li><a href="{=site.url('services/preventative-care')}">Preventative Healthcare</a></li>
+            <li><a href="{=site.url('services/dental-care')}">Dental Care</a></li>
+            <li><a href="{=site.url('services/desexing')}">Desexing</a></li>
+            <li><a href="{=site.url('services/diagnostics')}">Diagnostic Services</a></li>
+            <li><a href="{=site.url('services/surgery')}">Surgical Services</a></li>
+            <li><a href="{=site.url('services/tplo')}">TPLO Surgery</a></li>
+            <li><a href="{=site.url('services/puppy-preschool')}">Puppy Pre-school</a></li>
+            <li><a href="{=site.url('services/referrals')}">Emergency &amp; Referrals</a></li>
+          </ul>
+        </li>
+        <li class="open">
+          <a href="{=site.url('about')}">About</a>
+          <ul>
+            <li><a href="{=site.url('team')}">Meet Our Team</a></li>
+            <li><a href="{=site.url('pricing')}">Price List</a></li>
+          </ul>
+        </li>
+        <li class="open">
+          <a href="{=site.url('pet-insurance')}">Pet Owners</a>
+          <ul>
+            <li><a href="{=site.url('pet-insurance')}">Pet Insurance</a></li>
+            <li><a href="{=site.url('lost-and-found')}">Lost &amp; Found Pets</a></li>
+            <li><a href="{=site.url('wildlife')}">Injured Wildlife</a></li>
+          </ul>
+        </li>
+        <li><a href="{=site.url('blog')}">Blog</a></li>
+        <li><a href="{=site.url('contact')}">Contact</a></li>
+        <li><a class="btn-book" href="https://onlinebooking.vetlinksql.com/booking?id=5B%2BknS13%2F38%3D">Book Online</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

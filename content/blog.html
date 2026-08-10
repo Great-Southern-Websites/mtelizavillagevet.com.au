@@ -1,0 +1,29 @@
+---
+title: "MEVV Blog"
+description: "News, pet care tips and stories from the clinic."
+layout: default
+---
+{@io.quarkiverse.roq.frontmatter.runtime.model.Page page}
+{@io.quarkiverse.roq.frontmatter.runtime.model.Site site}
+<section class="page-banner">
+  <div class="container">
+    <p class="eyebrow">From the clinic</p>
+    <h1>{=page.title}</h1>
+    <p>{=page.description}</p>
+  </div>
+  <div class="wave" role="presentation"></div>
+</section>
+<main class="section">
+  <div class="container">
+    <div class="post-list">
+      {#for post in site.collections.blog}
+      <article class="post-item">
+        <time datetime="{=post.date.isoDate}">{=post.date.format('d MMMM yyyy')}</time>
+        <h3><a href="{=post.url}">{=post.title}</a></h3>
+        <p>{=post.description ?: post.contentAbstract(40)}</p>
+      </article>
+      {/for}
+    </div>
+    <p style="margin-top: 2rem">For day-to-day updates and adorable patients, follow us on <a href="https://www.facebook.com/mtelizavillagevet/">Facebook</a> and <a href="https://www.instagram.com/mtelizavillagevet/">Instagram</a>.</p>
+  </div>
+</main>

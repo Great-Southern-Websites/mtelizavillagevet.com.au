@@ -1,0 +1,86 @@
+---
+title: "Our Services"
+description: "From annual health checks to advanced orthopaedic surgery — modern veterinary care for your pet, all under one roof in Mount Eliza."
+layout: default
+eyebrow: "What we do"
+---
+{@io.quarkiverse.roq.frontmatter.runtime.model.Page page}
+{@io.quarkiverse.roq.frontmatter.runtime.model.Site site}
+<section class="page-banner">
+  <div class="container">
+    <p class="eyebrow">What we do</p>
+    <h1>{=page.title}</h1>
+    <p>{=page.description}</p>
+  </div>
+  <div class="wave" role="presentation"></div>
+</section>
+<main class="section">
+  <div class="container">
+    <div class="card-grid">
+      <div class="card">
+        <div class="body">
+          <p class="kicker">Everyday care</p>
+          <h3>Routine preventative healthcare</h3>
+          <p>Annual health checks, vaccinations for dogs, cats and rabbits, and parasite prevention tailored to your pet's lifestyle.</p>
+          <a class="cta" href="{=site.url('services/preventative-care')}">Learn more</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="body">
+          <p class="kicker">Everyday care</p>
+          <h3>Dental care</h3>
+          <p>Professional scale and polish, dental X-rays and extractions — because up to 80% of dogs have dental disease by age three.</p>
+          <a class="cta" href="{=site.url('services/dental-care')}">Learn more</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="body">
+          <p class="kicker">Surgery</p>
+          <h3>Desexing</h3>
+          <p>Routine desexing as a day procedure, with thorough pre-anaesthetic checks and careful aftercare.</p>
+          <a class="cta" href="{=site.url('services/desexing')}">Learn more</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="body">
+          <p class="kicker">Investigation</p>
+          <h3>Diagnostic services</h3>
+          <p>In-house bloodwork, urinalysis, cytology, X-rays, ultrasound and echocardiography for fast answers.</p>
+          <a class="cta" href="{=site.url('services/diagnostics')}">Learn more</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="body">
+          <p class="kicker">Surgery</p>
+          <h3>Surgical services</h3>
+          <p>Soft tissue, ophthalmic and orthopaedic surgery in our fully equipped theatre, supported by mobile specialists.</p>
+          <a class="cta" href="{=site.url('services/surgery')}">Learn more</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="body">
+          <p class="kicker">Orthopaedics</p>
+          <h3>TPLO for cruciate rupture</h3>
+          <p>Advanced Tibial Plateau Levelling Osteotomy performed in-house by Dr Peter for faster recovery.</p>
+          <a class="cta" href="{=site.url('services/tplo')}">Learn more</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="body">
+          <p class="kicker">Training</p>
+          <h3>Puppy pre-school</h3>
+          <p>Positive, progressive classes that build confident, well-socialised puppies — and stronger bonds.</p>
+          <a class="cta" href="{=site.url('services/puppy-preschool')}">Learn more</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="body">
+          <p class="kicker">When it's urgent</p>
+          <h3>Emergency &amp; specialist referrals</h3>
+          <p>First aid and stabilisation here in the village, and referrals to trusted specialists when needed.</p>
+          <a class="cta" href="{=site.url('services/referrals')}">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
