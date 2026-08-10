@@ -1,20 +1,19 @@
 /* ==========================================================================
    Mt Eliza Village Vet — design system
-   Coastal village palette drawn from the clinic itself: petrol teal and
-   bright sea-teal from the signage, honey warmth, sea-foam light.
+   Brand palette taken from the clinic's logo and existing identity:
+   deep logo navy, bright signature teal, clean white.
    ========================================================================== */
 
 :root {
-  --petrol: #135E63;
-  --petrol-dark: #0C464B;
-  --sea: #2AA5B8;
-  --sea-soft: #7FCDD9;
-  --honey: #E9A13B;
-  --honey-soft: #F5BE6B;
-  --foam: #F4F8F7;
+  --navy: #0D4C66;
+  --navy-dark: #043957;
+  --teal: #21C4C4;
+  --teal-dark: #1AA5A5;
+  --teal-soft: #7FE1E0;
+  --foam: #F4FAFA;
   --white: #FFFFFF;
   --ink: #17313A;
-  --line: #DCE7E5;
+  --line: #DCE7E7;
   --muted: #5C6F74;
 
   --font-display: "Fraunces", Georgia, serif;
@@ -22,7 +21,7 @@
 
   --container: 72rem;
   --radius: 14px;
-  --shadow: 0 10px 30px rgba(19, 94, 99, 0.10);
+  --shadow: 0 10px 30px rgba(4, 57, 87, 0.10);
 }
 
 * { box-sizing: border-box; }
@@ -44,11 +43,11 @@ body {
 
 img { max-width: 100%; display: block; }
 
-a { color: var(--petrol); }
-a:hover { color: var(--sea); }
+a { color: var(--navy); }
+a:hover { color: var(--teal); }
 
 :focus-visible {
-  outline: 3px solid var(--honey);
+  outline: 3px solid var(--teal);
   outline-offset: 2px;
 }
 
@@ -68,7 +67,7 @@ a:hover { color: var(--sea); }
   right: 0;
   bottom: -1px;
   height: 26px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='26' viewBox='0 0 80 26' preserveAspectRatio='none'%3E%3Cpath fill='%23F4F8F7' d='M0 26 Q20 0 40 13 T80 26 Z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='26' viewBox='0 0 80 26' preserveAspectRatio='none'%3E%3Cpath fill='%23F4FAFA' d='M0 26 Q20 0 40 13 T80 26 Z'/%3E%3C/svg%3E");
   background-repeat: repeat-x;
   background-size: 80px 26px;
   pointer-events: none;
@@ -77,7 +76,7 @@ a:hover { color: var(--sea); }
 .site-footer .wave-flip {
   position: static;
   height: 26px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='26' viewBox='0 0 80 26' preserveAspectRatio='none'%3E%3Cpath fill='%23F4F8F7' d='M0 0 Q20 26 40 13 T80 0 Z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='26' viewBox='0 0 80 26' preserveAspectRatio='none'%3E%3Cpath fill='%23F4FAFA' d='M0 0 Q20 26 40 13 T80 0 Z'/%3E%3C/svg%3E");
   background-repeat: repeat-x;
   background-size: 80px 26px;
 }
@@ -86,7 +85,7 @@ a:hover { color: var(--sea); }
    Top bar
    -------------------------------------------------------------------------- */
 .topbar {
-  background: var(--petrol-dark);
+  background: var(--navy-dark);
   color: rgba(255, 255, 255, 0.9);
   font-size: 0.85rem;
 }
@@ -100,9 +99,9 @@ a:hover { color: var(--sea); }
 }
 
 .topbar a { color: var(--white); text-decoration: none; }
-.topbar a:hover { color: var(--honey-soft); }
-.topbar svg { vertical-align: -2px; color: var(--honey); }
-.topbar .hours { color: var(--sea-soft); }
+.topbar a:hover { color: var(--teal-soft); }
+.topbar svg { vertical-align: -2px; color: var(--teal); }
+.topbar .hours { color: var(--teal-soft); }
 
 @media (max-width: 40rem) {
   .topbar .hours, .topbar span:last-child { display: none; }
@@ -129,36 +128,11 @@ a:hover { color: var(--sea); }
 .brand {
   display: flex;
   align-items: center;
-  gap: 0.7rem;
   text-decoration: none;
-  color: var(--ink);
+  padding-block: 0.4rem;
 }
 
-.brand svg { flex: none; }
-
-.brand .name {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 1.3rem;
-  line-height: 1.05;
-}
-
-.brand .name em {
-  font-style: normal;
-  color: var(--petrol);
-  font-weight: 700;
-}
-
-.brand .name small {
-  display: block;
-  font-family: var(--font-body);
-  font-size: 0.7rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--muted);
-  font-weight: 700;
-  margin-top: 0.3rem;
-}
+.brand img { flex: none; width: 126px; height: auto; }
 
 /* Navigation */
 .nav-toggle-input { position: absolute; opacity: 0; }
@@ -177,7 +151,7 @@ a:hover { color: var(--sea); }
   display: block;
   width: 24px;
   height: 2.5px;
-  background: var(--petrol);
+  background: var(--navy);
   border-radius: 2px;
   position: relative;
   content: "";
@@ -211,14 +185,14 @@ a:hover { color: var(--sea); }
   border-radius: 8px;
 }
 
-.site-nav a:hover { color: var(--sea); }
+.site-nav a:hover { color: var(--teal); }
 
 .site-nav li { position: relative; }
 
 .site-nav li.open > a::after {
   content: " ▾";
   font-size: 0.7em;
-  color: var(--sea);
+  color: var(--teal);
 }
 
 .site-nav li.open > ul {
@@ -228,7 +202,7 @@ a:hover { color: var(--sea); }
   left: 0;
   min-width: 15rem;
   background: var(--white);
-  border-top: 3px solid var(--sea);
+  border-top: 3px solid var(--teal);
   border-radius: 0 0 10px 10px;
   padding: 0.35rem 0;
   flex-direction: column;
@@ -248,15 +222,15 @@ a:hover { color: var(--sea); }
 }
 
 .btn-book {
-  background: var(--honey);
-  color: var(--ink) !important;
+  background: var(--teal);
+  color: var(--white) !important;
   padding: 0.55rem 1.2rem !important;
   border-radius: 999px;
   margin-left: 0.5rem;
 }
 
 .btn-book:hover {
-  background: var(--honey-soft);
+  background: var(--teal-dark);
 }
 
 @media (max-width: 64rem) {
@@ -270,7 +244,7 @@ a:hover { color: var(--sea); }
     right: 0;
     background: var(--white);
     padding: 0.5rem 1.25rem 1.25rem;
-    border-bottom: 3px solid var(--sea);
+    border-bottom: 3px solid var(--teal);
     box-shadow: var(--shadow);
   }
 
@@ -295,7 +269,7 @@ a:hover { color: var(--sea); }
 .hero {
   position: relative;
   color: var(--white);
-  background: var(--petrol-dark);
+  background: var(--navy-dark);
   overflow: hidden;
 }
 
@@ -310,9 +284,9 @@ a:hover { color: var(--sea); }
   position: absolute;
   inset: 0;
   background: linear-gradient(100deg,
-      rgba(12, 70, 75, 0.94) 0%,
-      rgba(19, 94, 99, 0.75) 45%,
-      rgba(12, 70, 75, 0.25) 100%);
+      rgba(4, 57, 87, 0.94) 0%,
+      rgba(13, 76, 102, 0.75) 45%,
+      rgba(4, 57, 87, 0.25) 100%);
 }
 
 .hero .content {
@@ -326,7 +300,7 @@ a:hover { color: var(--sea); }
   letter-spacing: 0.3em;
   text-transform: uppercase;
   font-size: 0.82rem;
-  color: var(--honey-soft);
+  color: var(--teal-soft);
   margin: 0 0 1rem;
 }
 
@@ -340,7 +314,7 @@ a:hover { color: var(--sea); }
 
 .hero h1 em {
   font-style: italic;
-  color: var(--honey-soft);
+  color: var(--teal-soft);
 }
 
 .hero p.lead {
@@ -365,23 +339,23 @@ a:hover { color: var(--sea); }
 
 .btn:hover { transform: translateY(-2px); }
 
-.btn-honey { background: var(--honey); color: var(--ink); }
-.btn-honey:hover { background: var(--honey-soft); color: var(--ink); }
+.btn-teal { background: var(--teal); color: var(--white); }
+.btn-teal:hover { background: var(--teal-dark); color: var(--white); }
 
 .btn-outline { border-color: rgba(255, 255, 255, 0.7); color: var(--white); }
-.btn-outline:hover { border-color: var(--honey-soft); color: var(--honey-soft); }
+.btn-outline:hover { border-color: var(--teal-soft); color: var(--teal-soft); }
 
-.btn-petrol { background: var(--petrol); color: var(--white); }
-.btn-petrol:hover { background: var(--petrol-dark); color: var(--white); }
+.btn-navy { background: var(--navy); color: var(--white); }
+.btn-navy:hover { background: var(--navy-dark); color: var(--white); }
 
 /* --------------------------------------------------------------------------
    Species band — who we care for, as a signature ribbon
    -------------------------------------------------------------------------- */
 .species-band {
-  background: var(--petrol);
+  background: var(--navy);
   color: var(--foam);
   overflow: hidden;
-  border-bottom: 3px solid var(--honey);
+  border-bottom: 3px solid var(--teal);
 }
 
 .species-band .track {
@@ -401,7 +375,7 @@ a:hover { color: var(--sea); }
 .species-band .paw {
   font-style: normal;
   font-size: 0.8rem;
-  color: var(--sea-soft);
+  color: var(--teal-soft);
 }
 
 /* --------------------------------------------------------------------------
@@ -412,7 +386,7 @@ a:hover { color: var(--sea); }
 
 .section-head { max-width: 46rem; margin-bottom: 2.5rem; }
 
-.section-head .eyebrow { color: var(--sea); }
+.section-head .eyebrow { color: var(--teal); }
 
 h2.title {
   font-family: var(--font-display);
@@ -428,7 +402,7 @@ h2.title::after {
   width: 3.5rem;
   height: 0.28rem;
   border-radius: 2px;
-  background: var(--honey);
+  background: var(--teal);
   margin-top: 0.75rem;
 }
 
@@ -446,7 +420,7 @@ h2.title::after {
   box-shadow: var(--shadow);
   display: flex;
   flex-direction: column;
-  border-top: 4px solid var(--sea);
+  border-top: 4px solid var(--teal);
 }
 
 .card .thumb {
@@ -462,7 +436,7 @@ h2.title::after {
   height: 52px;
   border-radius: 14px;
   background: var(--foam);
-  color: var(--petrol);
+  color: var(--navy);
   display: grid;
   place-items: center;
   margin-bottom: 1rem;
@@ -480,7 +454,7 @@ h2.title::after {
   letter-spacing: 0.22em;
   text-transform: uppercase;
   font-size: 0.75rem;
-  color: var(--sea);
+  color: var(--teal);
   margin: 0 0 0.5rem;
 }
 
@@ -492,7 +466,7 @@ h2.title::after {
   text-decoration: none;
 }
 
-.card .cta::after { content: " →"; color: var(--honey); }
+.card .cta::after { content: " →"; color: var(--teal); }
 
 /* Split section (photo + text) */
 .split {
@@ -513,14 +487,14 @@ h2.title::after {
 
 /* Dark strip */
 .strip {
-  background: var(--petrol-dark);
+  background: var(--navy-dark);
   color: var(--white);
 }
 
 .strip h2.title { color: var(--white); }
-.strip .eyebrow { color: var(--honey-soft); }
+.strip .eyebrow { color: var(--teal-soft); }
 .strip p { color: rgba(255, 255, 255, 0.88); }
-.strip a:not(.btn) { color: var(--sea-soft); }
+.strip a:not(.btn) { color: var(--teal-soft); }
 
 /* Stat chips */
 .chips { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2rem; }
@@ -537,7 +511,7 @@ h2.title::after {
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 2.1rem;
-  color: var(--honey-soft);
+  color: var(--teal-soft);
   line-height: 1.15;
 }
 
@@ -554,7 +528,7 @@ h2.title::after {
   color: var(--ink);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  border-top: 4px solid var(--honey);
+  border-top: 4px solid var(--teal);
   padding: 1.75rem;
 }
 
@@ -576,7 +550,7 @@ h2.title::after {
    -------------------------------------------------------------------------- */
 .page-banner {
   position: relative;
-  background: linear-gradient(100deg, var(--petrol-dark) 15%, var(--petrol) 60%, var(--sea) 130%);
+  background: linear-gradient(100deg, var(--navy-dark) 15%, var(--navy) 60%, var(--teal) 130%);
   color: var(--white);
   padding: 3.5rem 0 3.75rem;
 }
@@ -596,7 +570,7 @@ h2.title::after {
   font-size: 1.12rem;
 }
 
-.page-banner .eyebrow { color: var(--honey-soft); }
+.page-banner .eyebrow { color: var(--teal-soft); }
 
 /* --------------------------------------------------------------------------
    Prose (markdown content)
@@ -616,7 +590,7 @@ h2.title::after {
   width: 2.75rem;
   height: 0.24rem;
   border-radius: 2px;
-  background: var(--honey);
+  background: var(--teal);
   margin-top: 0.5rem;
 }
 
@@ -633,7 +607,7 @@ h2.title::after {
 .prose blockquote {
   margin: 1.5rem 0;
   padding: 1rem 1.5rem;
-  border-left: 4px solid var(--sea);
+  border-left: 4px solid var(--teal);
   background: var(--white);
   border-radius: 0 var(--radius) var(--radius) 0;
   font-style: italic;
@@ -655,7 +629,7 @@ h2.title::after {
   text-transform: uppercase;
   font-size: 0.88rem;
   text-align: left;
-  background: var(--petrol);
+  background: var(--navy);
   color: var(--white);
   padding: 0.75rem 1rem;
 }
@@ -669,7 +643,7 @@ h2.title::after {
 
 .note {
   background: var(--white);
-  border-left: 4px solid var(--honey);
+  border-left: 4px solid var(--teal);
   border-radius: 0 var(--radius) var(--radius) 0;
   padding: 1rem 1.5rem;
   margin: 1.5rem 0;
@@ -685,7 +659,7 @@ h2.title::after {
   border-radius: var(--radius);
   padding: 1.75rem;
   box-shadow: var(--shadow);
-  border-left: 4px solid var(--sea);
+  border-left: 4px solid var(--teal);
 }
 
 .post-item time {
@@ -693,19 +667,19 @@ h2.title::after {
   letter-spacing: 0.18em;
   text-transform: uppercase;
   font-size: 0.78rem;
-  color: var(--sea);
+  color: var(--teal);
 }
 
 .post-item h3 { font-family: var(--font-display); margin: 0.35rem 0 0.5rem; font-size: 1.35rem; }
 .post-item h3 a { text-decoration: none; color: var(--ink); }
-.post-item h3 a:hover { color: var(--petrol); }
+.post-item h3 a:hover { color: var(--navy); }
 
 .article-meta {
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   font-size: 0.8rem;
-  color: var(--sea);
+  color: var(--teal);
   margin-bottom: 1rem;
 }
 
@@ -747,7 +721,7 @@ h2.title::after {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   font-size: 0.74rem;
-  color: var(--sea);
+  color: var(--teal);
   margin: 0.25rem 0 0.75rem;
 }
 
@@ -768,7 +742,7 @@ h2.title::after {
   border-radius: var(--radius);
   padding: 1.5rem;
   box-shadow: var(--shadow);
-  border-top: 4px solid var(--honey);
+  border-top: 4px solid var(--teal);
 }
 
 .contact-card h3 {
@@ -784,8 +758,8 @@ h2.title::after {
    Footer
    -------------------------------------------------------------------------- */
 .site-footer {
-  background: var(--petrol-dark);
-  color: rgba(255, 255, 255, 0.85);
+  background: var(--teal);
+  color: var(--navy-dark);
   margin-top: 3rem;
 }
 
@@ -803,7 +777,7 @@ h2.title::after {
 .site-footer h4 {
   font-family: var(--font-display);
   font-weight: 600;
-  color: var(--honey-soft);
+  color: var(--white);
   font-size: 1.1rem;
   margin: 0 0 0.85rem;
 }
@@ -811,16 +785,16 @@ h2.title::after {
 .site-footer ul { list-style: none; margin: 0; padding: 0; }
 .site-footer li { margin: 0.55rem 0; }
 
-.site-footer a { color: rgba(255, 255, 255, 0.85); text-decoration: none; }
-.site-footer a:hover { color: var(--honey-soft); }
+.site-footer a { color: var(--navy-dark); text-decoration: none; font-weight: 600; }
+.site-footer a:hover { color: var(--white); }
 
 .site-footer .social a { text-decoration: underline; }
 
 .site-footer .fine {
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-top: 1px solid rgba(4, 57, 87, 0.25);
   padding: 1.25rem 0;
   font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.55);
+  color: rgba(4, 57, 87, 0.75);
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem 2rem;
