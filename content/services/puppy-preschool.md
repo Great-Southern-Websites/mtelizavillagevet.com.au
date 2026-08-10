@@ -1,11 +1,11 @@
 ---
 title: "Puppy Pre-school"
-description: "Positive, progressive puppy classes at the clinic — start your best mate off on the right paw."
+description: "Positive, progressive puppy classes at the clinic. Start your best mate off on the right paw."
 layout: page
 eyebrow: "Our services"
 ---
 
-Our puppy pre-school uses progressive and positive learning techniques to help young dogs develop good behaviour early — and to help you understand what your puppy is trying to tell you.
+Our puppy pre-school uses progressive and positive learning techniques to help young dogs develop good behaviour early, and to help you understand what your puppy is trying to tell you.
 
 ## What you'll both learn
 

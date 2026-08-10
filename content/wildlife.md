@@ -5,7 +5,7 @@ layout: page
 eyebrow: "Pet owners"
 ---
 
-Found injured wildlife on the Mornington Peninsula? Bring the animal to us during opening hours — we'll assess it, offer first aid, and if suitable arrange transfer to an experienced wildlife carer for rehabilitation.
+Found injured wildlife on the Mornington Peninsula? Bring the animal to us during opening hours. We'll assess it, offer first aid, and if suitable arrange transfer to an experienced wildlife carer for rehabilitation.
 
 <div class="note"><strong>Safety first:</strong> never put yourself at risk to rescue wildlife. Keep your distance from snakes, large kangaroos, flying foxes and birds of prey, and call a rescue service instead.</div>
 

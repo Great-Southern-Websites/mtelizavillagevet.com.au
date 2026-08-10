@@ -1,11 +1,11 @@
 ---
 title: "TPLO Surgery"
-description: "Tibial Plateau Levelling Osteotomy — advanced cruciate surgery performed in-house by Dr Peter."
+description: "Tibial Plateau Levelling Osteotomy, advanced cruciate surgery performed in-house by Dr Peter."
 layout: page
 eyebrow: "Our services"
 ---
 
-If your dog has a torn ACL (cruciate ligament) or an unstable knee, we offer **TPLO (Tibial Plateau Levelling Osteotomy) surgery in-house**. Performed by Dr Peter, this advanced technique changes the mechanics of the knee so your dog can bear weight comfortably again — with a typically rapid recovery compared to traditional techniques.
+If your dog has a torn ACL (cruciate ligament) or an unstable knee, we offer **TPLO (Tibial Plateau Levelling Osteotomy) surgery in-house**. Performed by Dr Peter, this advanced technique changes the mechanics of the knee so your dog can bear weight comfortably again, with a typically rapid recovery compared to traditional techniques.
 
 ## What it costs
 

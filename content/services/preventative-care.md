@@ -1,13 +1,13 @@
 ---
 title: "Routine Preventative Healthcare"
-description: "Annual health checks, vaccinations and parasite prevention — the foundations of a long, healthy life."
+description: "Annual health checks, vaccinations and parasite prevention: the foundations of a long, healthy life."
 layout: page
 eyebrow: "Our services"
 ---
 
 ## Annual health checks
 
-Dogs and cats age on average five to eight times faster than humans, so significant health changes can happen in a short time. A thorough check-up at least once a year lets us pick up problems early — when they're easiest to treat.
+Dogs and cats age on average five to eight times faster than humans, so significant health changes can happen in a short time. A thorough check-up at least once a year lets us pick up problems early, when they're easiest to treat.
 
 Every annual health check includes a full physical examination:
 
@@ -31,6 +31,6 @@ Vaccines present the body with a dead or inert form of an infectious agent so th
 
 ## Parasite prevention
 
-Parasites come in all shapes and sizes — from intestinal worms and heartworm to fleas, ticks and mites. We stock a range of prevention products and will recommend a plan tailored to your pet's age, lifestyle and risk.
+Parasites come in all shapes and sizes, from intestinal worms and heartworm to fleas, ticks and mites. We stock a range of prevention products and will recommend a plan tailored to your pet's age, lifestyle and risk.
 
 <div class="note">Not sure what your pet is due for? <a href="/contact">Give us a call</a> and we'll check their records for you.</div>

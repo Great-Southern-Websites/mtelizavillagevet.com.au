@@ -13,7 +13,7 @@ Our veterinary team has a wide range of surgical experience and offers a variety
 - Dental cleaning and extractions
 - Lump removals and biopsies
 - Wound repair
-- Eye surgery — cherry eye repair, eyelid procedures, mass removal and enucleation
+- Eye surgery, including cherry eye repair, eyelid procedures, mass removal and enucleation
 - Corrective breathing surgery for flat-faced (brachycephalic) breeds
 - Caesarean sections
 - Abdominal exploration, including foreign body removal

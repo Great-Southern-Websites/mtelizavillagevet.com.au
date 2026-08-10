@@ -5,7 +5,7 @@ layout: page
 eyebrow: "About us"
 ---
 
-We believe in transparent pricing. Below are our current prices for the most common services — for anything not listed, just [ask us](/contact).
+We believe in transparent pricing. Below are our current prices for the most common services. For anything not listed, just [ask us](/contact).
 
 ## Consultations & vaccinations
 
@@ -38,10 +38,10 @@ Our dental procedures include general anaesthesia, dedicated nurse monitoring, d
 
 | Procedure | Price |
 | --- | --- |
-| Grade 1 — scale and polish | $500 |
-| Grade 2 — minor extractions | $800 |
-| Grade 3 — single major extraction | $1,100 |
-| Grade 4 — multiple major extractions | $1,500 |
+| Grade 1: scale and polish | $500 |
+| Grade 2: minor extractions | $800 |
+| Grade 3: single major extraction | $1,100 |
+| Grade 4: multiple major extractions | $1,500 |
 
 ## Orthopaedic surgery
 

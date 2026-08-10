@@ -1,6 +1,6 @@
 ---
 title: "Contact Us"
-description: "Find us at 85 Canadian Bay Road, Mount Eliza — or call, email or book online."
+description: "Find us at 85 Canadian Bay Road, Mount Eliza, or call, email or book online."
 layout: page
 eyebrow: "Get in touch"
 ---
@@ -18,14 +18,14 @@ eyebrow: "Get in touch"
   </div>
   <div class="contact-card">
     <h3>Book online</h3>
-    <p>Choose a time that suits you — day or night.</p>
+    <p>Choose a time that suits you, day or night.</p>
     <a href="https://onlinebooking.vetlinksql.com/booking?id=5B%2BknS13%2F38%3D">Make an appointment</a>
   </div>
 </div>
 
 ## Visit the clinic
 
-**85 Canadian Bay Road, Mount Eliza VIC 3930** — right in the heart of the village, with parking on site.
+**85 Canadian Bay Road, Mount Eliza VIC 3930**, right in the heart of the village, with parking on site.
 
 | Day | Hours |
 | --- | --- |
