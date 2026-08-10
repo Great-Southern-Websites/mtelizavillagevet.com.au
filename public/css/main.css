@@ -551,6 +551,7 @@ h2.title::after {
 /* Hours panel (home + contact) */
 .hours-panel {
   background: var(--white);
+  color: var(--ink);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   border-top: 4px solid var(--honey);
