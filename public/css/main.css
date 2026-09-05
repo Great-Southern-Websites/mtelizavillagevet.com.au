@@ -24,6 +24,48 @@
   --container: 72rem;
   --radius: 14px;
   --shadow: 0 10px 30px rgba(4, 57, 87, 0.10);
+
+  /* Semantic tokens: these are the only ones that change between light and dark. */
+  --bg: var(--foam);
+  --surface: var(--white);
+  --text: var(--ink);
+  --text-muted: var(--muted);
+  --border: var(--line);
+  --link: var(--navy);
+  --link-hover: var(--azure-dark);
+  --accent-text: var(--azure-dark);
+  color-scheme: light;
+}
+
+/* Dark theme. Applied when the visitor picks it with the header switch, or when
+   their device prefers dark and they have not picked light. Brand colours stay
+   the same; only the page, surfaces and text swap. */
+:root[data-theme="dark"] {
+  --bg: #0A1C25;
+  --surface: #122C38;
+  --text: #E8F1F6;
+  --text-muted: #A7BCC6;
+  --border: #26485A;
+  --link: var(--azure-soft);
+  --link-hover: var(--sand-soft);
+  --accent-text: var(--azure-soft);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0A1C25;
+    --surface: #122C38;
+    --text: #E8F1F6;
+    --text-muted: #A7BCC6;
+    --border: #26485A;
+    --link: var(--azure-soft);
+    --link-hover: var(--sand-soft);
+    --accent-text: var(--azure-soft);
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    color-scheme: dark;
+  }
 }
 
 * { box-sizing: border-box; }
@@ -39,14 +81,14 @@ body {
   font-family: var(--font-body);
   font-size: 1.0625rem;
   line-height: 1.65;
-  color: var(--ink);
-  background: var(--foam);
+  color: var(--text);
+  background: var(--bg);
 }
 
 img { max-width: 100%; display: block; }
 
-a { color: var(--navy); }
-a:hover { color: var(--azure-dark); }
+a { color: var(--link); }
+a:hover { color: var(--link-hover); }
 
 :focus-visible {
   outline: 3px solid var(--azure);
@@ -83,6 +125,23 @@ a:hover { color: var(--azure-dark); }
   background-size: 80px 26px;
 }
 
+/* The wave fill must match the page background, and a data URI cannot read a
+   custom property, so the dark theme swaps in a matching dark copy. */
+:root[data-theme="dark"] .wave {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='26' viewBox='0 0 80 26' preserveAspectRatio='none'%3E%3Cpath fill='%230A1C25' d='M0 26 Q20 0 40 13 T80 26 Z'/%3E%3C/svg%3E");
+}
+:root[data-theme="dark"] .site-footer .wave-flip {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='26' viewBox='0 0 80 26' preserveAspectRatio='none'%3E%3Cpath fill='%230A1C25' d='M0 0 Q20 26 40 13 T80 0 Z'/%3E%3C/svg%3E");
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .wave {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='26' viewBox='0 0 80 26' preserveAspectRatio='none'%3E%3Cpath fill='%230A1C25' d='M0 26 Q20 0 40 13 T80 26 Z'/%3E%3C/svg%3E");
+  }
+  :root:not([data-theme="light"]) .site-footer .wave-flip {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='26' viewBox='0 0 80 26' preserveAspectRatio='none'%3E%3Cpath fill='%230A1C25' d='M0 0 Q20 26 40 13 T80 0 Z'/%3E%3C/svg%3E");
+  }
+}
+
 /* --------------------------------------------------------------------------
    Top bar
    -------------------------------------------------------------------------- */
@@ -113,11 +172,11 @@ a:hover { color: var(--azure-dark); }
    Header
    -------------------------------------------------------------------------- */
 .site-header {
-  background: var(--white);
-  color: var(--ink);
+  background: var(--surface);
+  color: var(--text);
   position: relative;
   z-index: 50;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--border);
 }
 
 .site-header .bar {
@@ -136,6 +195,12 @@ a:hover { color: var(--azure-dark); }
 
 .brand img { flex: none; width: 126px; height: auto; }
 
+/* The logo is navy on white, so give it a white pad when the header goes dark. */
+:root[data-theme="dark"] .brand { background: var(--white); border-radius: 10px; padding: 0.35rem 0.6rem; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .brand { background: var(--white); border-radius: 10px; padding: 0.35rem 0.6rem; }
+}
+
 /* Navigation */
 .nav-toggle-input { position: absolute; opacity: 0; }
 
@@ -153,7 +218,7 @@ a:hover { color: var(--azure-dark); }
   display: block;
   width: 24px;
   height: 2.5px;
-  background: var(--navy);
+  background: var(--link);
   border-radius: 2px;
   position: relative;
   content: "";
@@ -179,7 +244,7 @@ a:hover { color: var(--azure-dark); }
 
 .site-nav a {
   display: block;
-  color: var(--ink);
+  color: var(--text);
   text-decoration: none;
   font-weight: 700;
   font-size: 0.98rem;
@@ -187,7 +252,7 @@ a:hover { color: var(--azure-dark); }
   border-radius: 8px;
 }
 
-.site-nav a:hover { color: var(--azure-dark); }
+.site-nav a:hover { color: var(--link-hover); }
 
 .site-nav li { position: relative; }
 
@@ -203,7 +268,7 @@ a:hover { color: var(--azure-dark); }
   top: 100%;
   left: 0;
   min-width: 15rem;
-  background: var(--white);
+  background: var(--surface);
   border-top: 3px solid var(--azure);
   border-radius: 0 0 10px 10px;
   padding: 0.35rem 0;
@@ -235,8 +300,38 @@ a:hover { color: var(--azure-dark); }
   background: var(--navy);
 }
 
+/* Light/dark switch */
+.theme-toggle {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--link);
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.theme-toggle:hover { color: var(--link-hover); border-color: var(--azure); }
+
+.theme-toggle svg { display: block; }
+.theme-toggle .icon-moon { display: block; }
+.theme-toggle .icon-sun { display: none; }
+
+:root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+:root[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-toggle .icon-moon { display: none; }
+  :root:not([data-theme="light"]) .theme-toggle .icon-sun { display: block; }
+}
+
 @media (max-width: 64rem) {
-  .nav-toggle { display: block; }
+  .nav-toggle { display: block; order: 3; margin-left: 0; }
+  .theme-toggle { order: 2; margin-left: auto; }
 
   .site-nav {
     display: none;
@@ -244,7 +339,7 @@ a:hover { color: var(--azure-dark); }
     top: 100%;
     left: 0;
     right: 0;
-    background: var(--white);
+    background: var(--surface);
     padding: 0.5rem 1.25rem 1.25rem;
     border-bottom: 3px solid var(--sand);
     box-shadow: var(--shadow);
@@ -388,7 +483,7 @@ a:hover { color: var(--azure-dark); }
 
 .section-head { max-width: 46rem; margin-bottom: 2.5rem; }
 
-.section-head .eyebrow { color: var(--azure-dark); }
+.section-head .eyebrow { color: var(--accent-text); }
 
 h2.title {
   font-family: var(--font-display);
@@ -416,7 +511,7 @@ h2.title::after {
 }
 
 .card {
-  background: var(--white);
+  background: var(--surface);
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -437,8 +532,8 @@ h2.title::after {
   width: 52px;
   height: 52px;
   border-radius: 14px;
-  background: var(--foam);
-  color: var(--navy);
+  background: var(--bg);
+  color: var(--link);
   display: grid;
   place-items: center;
   margin-bottom: 1rem;
@@ -456,11 +551,11 @@ h2.title::after {
   letter-spacing: 0.22em;
   text-transform: uppercase;
   font-size: 0.75rem;
-  color: var(--azure-dark);
+  color: var(--accent-text);
   margin: 0 0 0.5rem;
 }
 
-.card p { margin: 0 0 1.25rem; color: var(--muted); }
+.card p { margin: 0 0 1.25rem; color: var(--text-muted); }
 
 .card .cta {
   margin-top: auto;
@@ -526,8 +621,8 @@ h2.title::after {
 
 /* Hours panel (home + contact) */
 .hours-panel {
-  background: var(--white);
-  color: var(--ink);
+  background: var(--surface);
+  color: var(--text);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   border-top: 4px solid var(--sand);
@@ -542,10 +637,10 @@ h2.title::after {
 }
 
 .hours-panel table { width: 100%; border-collapse: collapse; }
-.hours-panel td { padding: 0.45rem 0; border-bottom: 1px solid var(--line); }
+.hours-panel td { padding: 0.45rem 0; border-bottom: 1px solid var(--border); }
 .hours-panel tr:last-child td { border-bottom: none; }
 .hours-panel td:last-child { text-align: right; font-weight: 700; }
-.hours-panel .closed { color: var(--muted); }
+.hours-panel .closed { color: var(--text-muted); }
 
 /* --------------------------------------------------------------------------
    Page banner (inner pages)
@@ -610,7 +705,7 @@ h2.title::after {
   margin: 1.5rem 0;
   padding: 1rem 1.5rem;
   border-left: 4px solid var(--azure);
-  background: var(--white);
+  background: var(--surface);
   border-radius: 0 var(--radius) var(--radius) 0;
   font-style: italic;
 }
@@ -619,7 +714,7 @@ h2.title::after {
   width: 100%;
   border-collapse: collapse;
   margin: 1.5rem 0;
-  background: var(--white);
+  background: var(--surface);
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -638,13 +733,13 @@ h2.title::after {
 
 .prose td {
   padding: 0.7rem 1rem;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--border);
 }
 
 .prose tr:last-child td { border-bottom: none; }
 
 .note {
-  background: var(--white);
+  background: var(--surface);
   border-left: 4px solid var(--sand);
   border-radius: 0 var(--radius) var(--radius) 0;
   padding: 1rem 1.5rem;
@@ -657,7 +752,7 @@ h2.title::after {
 .post-list { display: grid; gap: 1.5rem; max-width: 48rem; }
 
 .post-item {
-  background: var(--white);
+  background: var(--surface);
   border-radius: var(--radius);
   padding: 1.75rem;
   box-shadow: var(--shadow);
@@ -669,19 +764,19 @@ h2.title::after {
   letter-spacing: 0.18em;
   text-transform: uppercase;
   font-size: 0.78rem;
-  color: var(--azure-dark);
+  color: var(--accent-text);
 }
 
 .post-item h3 { font-family: var(--font-display); margin: 0.35rem 0 0.5rem; font-size: 1.35rem; }
-.post-item h3 a { text-decoration: none; color: var(--ink); }
-.post-item h3 a:hover { color: var(--navy); }
+.post-item h3 a { text-decoration: none; color: var(--text); }
+.post-item h3 a:hover { color: var(--link-hover); }
 
 .article-meta {
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   font-size: 0.8rem;
-  color: var(--azure-dark);
+  color: var(--accent-text);
   margin-bottom: 1rem;
 }
 
@@ -696,7 +791,7 @@ h2.title::after {
 }
 
 .team-card {
-  background: var(--white);
+  background: var(--surface);
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -723,11 +818,11 @@ h2.title::after {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   font-size: 0.74rem;
-  color: var(--azure-dark);
+  color: var(--accent-text);
   margin: 0.25rem 0 0.75rem;
 }
 
-.team-card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+.team-card p { margin: 0; color: var(--text-muted); font-size: 0.95rem; }
 
 /* --------------------------------------------------------------------------
    Contact cards
@@ -740,7 +835,7 @@ h2.title::after {
 }
 
 .contact-card {
-  background: var(--white);
+  background: var(--surface);
   border-radius: var(--radius);
   padding: 1.5rem;
   box-shadow: var(--shadow);
@@ -760,7 +855,7 @@ h2.title::after {
    Facebook feed embed
    -------------------------------------------------------------------------- */
 .fb-embed {
-  background: var(--white);
+  background: var(--surface);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   border-top: 4px solid var(--azure);
