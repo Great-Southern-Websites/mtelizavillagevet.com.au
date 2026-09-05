@@ -195,10 +195,13 @@ a:hover { color: var(--link-hover); }
 
 .brand img { flex: none; width: 126px; height: auto; }
 
-/* The logo is navy on white, so give it a white pad when the header goes dark. */
-:root[data-theme="dark"] .brand { background: var(--white); border-radius: 10px; padding: 0.35rem 0.6rem; }
+/* Two copies of the logo: navy on light, reversed to white on dark. Only one shows. */
+.brand .logo-dark { display: none; }
+:root[data-theme="dark"] .brand .logo-light { display: none; }
+:root[data-theme="dark"] .brand .logo-dark { display: block; }
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .brand { background: var(--white); border-radius: 10px; padding: 0.35rem 0.6rem; }
+  :root:not([data-theme="light"]) .brand .logo-light { display: none; }
+  :root:not([data-theme="light"]) .brand .logo-dark { display: block; }
 }
 
 /* Navigation */
