@@ -1,5 +1,6 @@
 ---
 title: "Lost & Found Pets"
+aliases: ["/Lostandfoundpets.aspx"]
 description: "Lost your pet, or found a stray? Here's what to do."
 layout: page
 eyebrow: "Pet owners"

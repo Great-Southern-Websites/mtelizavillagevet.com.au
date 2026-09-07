@@ -1,5 +1,6 @@
 ---
 title: "Emergency & Specialist Referrals"
+aliases: ["/EmergencyandSpecialistReferrals.aspx"]
 description: "First aid and stabilisation here in the village, and trusted specialist referrals when your pet needs more."
 layout: page
 eyebrow: "Our services"

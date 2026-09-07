@@ -1,5 +1,6 @@
 ---
 title: "Routine Preventative Healthcare"
+aliases: ["/RoutinePreventativeHealthcare.aspx", "/mtelizavillagevet/Blog/Fleas-Getting-the-jump-on-an-itchy-issue", "/mtelizavillagevet/blog/Fleas-Getting-the-jump-on-an-itchy-issue", "/mtelizavillagevet/Blog/Does-My-Pet-Need-That-Vaccine", "/mtelizavillagevet/blog/Does-My-Pet-Need-That-Vaccine"]
 description: "Annual health checks, vaccinations and parasite prevention: the foundations of a long, healthy life."
 layout: page
 eyebrow: "Our services"

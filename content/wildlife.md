@@ -1,5 +1,6 @@
 ---
 title: "Injured Wildlife"
+aliases: ["/Injuredwildlife.aspx"]
 description: "Found injured wildlife on the Peninsula? We'll assess, give first aid and arrange care."
 layout: page
 eyebrow: "Pet owners"

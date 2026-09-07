@@ -1,5 +1,6 @@
 ---
 title: "Diagnostic Services"
+aliases: ["/DiagnosticServices.aspx"]
 description: "Our pets can't tell us where it hurts. Modern in-house diagnostics help us find out fast."
 layout: page
 eyebrow: "Our services"

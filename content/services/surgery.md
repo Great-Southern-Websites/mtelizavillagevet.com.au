@@ -1,5 +1,6 @@
 ---
 title: "Surgical Services"
+aliases: ["/SurgicalServices.aspx"]
 description: "Soft tissue, ophthalmic and orthopaedic surgery in our fully equipped theatre."
 layout: page
 eyebrow: "Our services"

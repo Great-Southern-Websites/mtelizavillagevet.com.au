@@ -1,5 +1,6 @@
 ---
 title: "Contact Us"
+aliases: ["/contact-us.aspx", "/make-a-booking.aspx", "/Register-New-Pet-Form.aspx", "/Update-Your-Details-Form.aspx"]
 description: "Find us at 85 Canadian Bay Road, Mount Eliza, or call, email or book online."
 layout: page
 eyebrow: "Get in touch"

@@ -1,5 +1,6 @@
 ---
 title: "TPLO Surgery"
+aliases: ["/TPLO-TibialPlateauLevellingOsteotomyforACLrupture.aspx"]
 description: "Tibial Plateau Levelling Osteotomy, advanced cruciate surgery performed in-house by Dr Peter."
 layout: page
 eyebrow: "Our services"

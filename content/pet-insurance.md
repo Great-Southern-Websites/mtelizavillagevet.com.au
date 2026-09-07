@@ -1,5 +1,6 @@
 ---
 title: "Pet Insurance"
+aliases: ["/PetInsurance.aspx"]
 description: "Peace of mind for unexpected vet bills, plus on-the-spot claims with GapOnly®."
 layout: page
 eyebrow: "Pet owners"

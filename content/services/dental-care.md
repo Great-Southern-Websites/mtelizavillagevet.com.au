@@ -1,5 +1,6 @@
 ---
 title: "Dental Care"
+aliases: ["/DentalCare.aspx"]
 description: "Up to 80% of dogs and 70% of cats have some form of dental disease by age three. We can help."
 layout: page
 eyebrow: "Our services"

@@ -1,5 +1,6 @@
 ---
 title: "Desexing"
+aliases: ["/Desexing.aspx"]
 description: "Safe, routine desexing as a day procedure. Most pets are back home the same afternoon."
 layout: page
 eyebrow: "Our services"

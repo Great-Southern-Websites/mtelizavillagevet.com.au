@@ -1,5 +1,6 @@
 ---
 title: "Puppy Pre-school"
+aliases: ["/PuppyPre-school.aspx"]
 description: "Positive, progressive puppy classes at the clinic. Start your best mate off on the right paw."
 layout: page
 eyebrow: "Our services"

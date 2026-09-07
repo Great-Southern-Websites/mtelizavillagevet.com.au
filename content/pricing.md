@@ -1,5 +1,6 @@
 ---
 title: "Price List"
+aliases: ["/Pricing.aspx"]
 description: "Transparent pricing for our most common services and procedures."
 layout: page
 eyebrow: "About us"

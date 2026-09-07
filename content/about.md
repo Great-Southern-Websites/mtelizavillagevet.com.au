@@ -1,5 +1,6 @@
 ---
 title: "About Our Clinic"
+aliases: ["/AboutOurClinic.aspx"]
 description: "A small, family-owned and operated clinic delivering personal, compassionate and modern veterinary care since 2016."
 layout: page
 eyebrow: "About us"
