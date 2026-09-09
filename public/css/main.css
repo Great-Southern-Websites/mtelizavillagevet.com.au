@@ -449,36 +449,6 @@ a:hover { color: var(--link-hover); }
 .btn-navy:hover { background: var(--navy-dark); color: var(--white); }
 
 /* --------------------------------------------------------------------------
-   Species band — who we care for, as a signature ribbon
-   -------------------------------------------------------------------------- */
-.species-band {
-  background: var(--navy);
-  color: var(--foam);
-  overflow: hidden;
-  border-bottom: 3px solid var(--sand);
-}
-
-.species-band .track {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 0.4rem 1.1rem;
-  padding: 0.6rem 1rem;
-  font-family: var(--font-display);
-  font-style: italic;
-  font-weight: 600;
-  font-size: 1.05rem;
-  letter-spacing: 0.04em;
-}
-
-.species-band .paw {
-  font-style: normal;
-  font-size: 0.8rem;
-  color: var(--sand-soft);
-}
-
-/* --------------------------------------------------------------------------
    Sections
    -------------------------------------------------------------------------- */
 .section { padding: 4.5rem 0; }
