@@ -31,5 +31,3 @@ Jess from Underdog Training runs puppy school at the clinic on Wednesday nights.
 Bookings are essential. To make a booking or check on upcoming classes and availabilities, follow the link below.
 
 <p><a class="btn btn-azure" href="https://bookings.underdogtraining.com.au/puppy-pre-school/" target="_blank" rel="noopener">Book puppy pre-school</a></p>
-
-<div class="note"><strong>Ready to enrol?</strong> Call us on <a href="tel:+61359552440">(03) 5955 2440</a> to ask about upcoming classes.</div>
