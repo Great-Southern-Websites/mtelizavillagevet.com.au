@@ -718,6 +718,18 @@ h2.title::after {
   margin: 0 0 1.25rem;
 }
 
+.partner-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0 0 1.25rem;
+}
+.partner-row .partner-logo { flex: none; width: 140px; margin: 0; }
+.partner-row p { margin: 0; }
+@media (max-width: 480px) {
+  .partner-row { flex-direction: column; align-items: flex-start; }
+}
+
 .note {
   background: var(--surface);
   border-left: 4px solid var(--sand);

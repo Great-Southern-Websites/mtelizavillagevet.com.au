@@ -14,7 +14,10 @@ Insurance means you never have to make a difficult decision about your pet's car
 
 ## Claim on the spot with GapOnly&reg;
 
-We support **GapOnly&reg;** claims: we lodge your claim on the spot, you simply pay the gap (the amount not covered by your insurance), and that's it. No paying the full bill upfront, no waiting weeks for reimbursement.
+<div class="partner-row">
+  <img class="partner-logo" src="{=site.url('images/uploads/gap-only-logo.png')}" alt="GapOnly logo" width="225" height="225" loading="lazy">
+  <p>We support <strong>GapOnly&reg;</strong> claims: we lodge your claim on the spot, you simply pay the gap (the amount not covered by your insurance), and that's it. No paying the full bill upfront, no waiting weeks for reimbursement.</p>
+</div>
 
 ## Choosing a policy
 
