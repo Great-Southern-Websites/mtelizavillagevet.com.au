@@ -22,4 +22,14 @@ Our puppy pre-school uses progressive and positive learning techniques to help y
 
 The earlier the better: waiting allows unwanted behaviours to become established habits that take much more work to correct. Puppy pre-school also doubles as safe socialisation during a critical developmental window.
 
+## Classes with Underdog Training
+
+<img class="partner-logo" src="{=site.url('images/uploads/logo.png')}" alt="Underdog Training logo" width="217" height="155" loading="lazy">
+
+Jess from Underdog Training runs puppy school at the clinic on Wednesday nights. Each class runs for one hour, starting at 6:30pm.
+
+Bookings can be made from the link below.
+
+<p><a class="btn btn-azure" href="https://bookings.underdogtraining.com.au/puppy-pre-school/" target="_blank" rel="noopener">Book puppy pre-school</a></p>
+
 <div class="note"><strong>Ready to enrol?</strong> Call us on <a href="tel:+61359552440">(03) 5955 2440</a> to ask about upcoming classes.</div>

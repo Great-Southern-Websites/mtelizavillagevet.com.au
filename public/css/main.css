@@ -711,6 +711,13 @@ h2.title::after {
 
 .prose tr:last-child td { border-bottom: none; }
 
+.partner-logo {
+  width: 217px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 1.25rem;
+}
+
 .note {
   background: var(--surface);
   border-left: 4px solid var(--sand);
