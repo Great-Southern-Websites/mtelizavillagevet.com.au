@@ -6,6 +6,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {#seo page site /}
+{#if site.data.containsKey("analytics")}
+{#ga4 tag=site.data.getJsonObject('analytics').getString("ga4", "") /}
+{/if}
   <link rel="icon" href="{=site.url('favicon.svg')}" type="image/svg+xml">
   <link rel="icon" href="{=site.url('favicon.ico')}" sizes="48x48">
   <link rel="apple-touch-icon" href="{=site.url('apple-touch-icon.png')}">
