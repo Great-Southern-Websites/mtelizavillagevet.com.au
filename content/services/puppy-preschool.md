@@ -28,7 +28,7 @@ The earlier the better: waiting allows unwanted behaviours to become established
 
 Jess from Underdog Training runs puppy school at the clinic on Wednesday nights. Each class runs for one hour, starting at 6:30pm.
 
-Bookings can be made from the link below.
+Bookings are essential. To make a booking or check on upcoming classes and availabilities, follow the link below.
 
 <p><a class="btn btn-azure" href="https://bookings.underdogtraining.com.au/puppy-pre-school/" target="_blank" rel="noopener">Book puppy pre-school</a></p>
 
