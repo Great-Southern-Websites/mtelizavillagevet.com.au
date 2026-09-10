@@ -14,7 +14,7 @@ The practice opened in **2016**, after Pete and Libby pursued a range of veterin
 
 ## Our team
 
-We're a team of ten: four veterinarians, five nurses and our receptionist Corinna. Everyone here is dedicated to providing a high standard of modern, personal and compassionate care for our patients, and we actively support ongoing professional development, so our skills keep growing with the profession.
+We're a team of fifteen: five veterinarians, seven nurses, a trainee nurse and two receptionists. Everyone here is dedicated to providing a high standard of modern, personal and compassionate care for our patients, and we actively support ongoing professional development, so our skills keep growing with the profession.
 
 [Meet the whole team →](/team)
 
