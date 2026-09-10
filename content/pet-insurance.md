@@ -21,4 +21,9 @@ Insurance means you never have to make a difficult decision about your pet's car
 
 ## Choosing a policy
 
-Policies vary widely in what they cover (accidents, illness, routine care) and in their limits and exclusions. We're happy to help you think through what cover makes sense for your pet's breed, age and lifestyle. [Ask us at your next visit](/contact).
+Policies vary widely in what they cover (accidents, illness, routine care) and in their limits and exclusions. Canstar compares pet insurance policies side by side, which is a good place to start when you are working out what suits your pet.
+
+<div class="partner-row">
+  <img class="partner-logo" src="{=site.url('images/uploads/cannstar.jpg')}" alt="Canstar logo" width="292" height="172" loading="lazy">
+  <p><a href="https://www.canstar.com.au/pet-insurance/" target="_blank" rel="noopener">Compare pet insurance at Canstar</a></p>
+</div>
