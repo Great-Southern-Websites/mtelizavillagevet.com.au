@@ -12,9 +12,6 @@
   <link rel="icon" href="{=site.url('favicon.svg')}" type="image/svg+xml">
   <link rel="icon" href="{=site.url('favicon.ico')}" sizes="48x48">
   <link rel="apple-touch-icon" href="{=site.url('apple-touch-icon.png')}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;1,6..12,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{=site.url('css/main.css')}">
   <script>
   {|
@@ -29,6 +26,10 @@
   |}
   </script>
   {#insert head /}
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="{=site.url('fonts/fraunces-600-normal-latin.woff2')}">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="{=site.url('fonts/fraunces-700-normal-latin.woff2')}">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="{=site.url('fonts/nunito-sans-400-normal-latin.woff2')}">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="{=site.url('fonts/nunito-sans-700-normal-latin.woff2')}">
 </head>
 <body>
   {#include partials/header /}
