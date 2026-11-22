@@ -981,6 +981,49 @@ h2.title::after {
 }
 
 /* --------------------------------------------------------------------------
+   Google review quotes (home)
+   -------------------------------------------------------------------------- */
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 1.5rem;
+}
+
+.review {
+  margin: 0;
+  padding: 1.5rem;
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border-top: 4px solid var(--sand);
+  display: flex;
+  flex-direction: column;
+}
+
+/* The opening quote mark, set in the display face, is the section's one flourish. */
+.review::before {
+  content: "\201C";
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 0.6;
+  color: var(--sand);
+  margin-bottom: 0.75rem;
+}
+
+.review blockquote { margin: 0; }
+.review blockquote p { margin: 0 0 1.25rem; color: var(--text-muted); }
+
+.review figcaption {
+  margin-top: auto;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.review-cta { margin: 2rem 0 0; }
+
+/* --------------------------------------------------------------------------
    Footer
    -------------------------------------------------------------------------- */
 .site-footer {
