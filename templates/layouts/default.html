@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {#seo page site /}
+  {#rss site /}
 {#if site.data.containsKey("analytics")}
 {#ga4 tag=site.data.getJsonObject('analytics').getString("ga4", "") /}
 {/if}
